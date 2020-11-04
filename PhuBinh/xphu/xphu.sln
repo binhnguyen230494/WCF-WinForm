@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.271
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "vbinh", "vbinh.csproj", "{04D71E55-8F9B-4F14-B67D-85E2301E6BB9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FormBinhPhu", "..\FormBinhPhu\FormBinhPhu.csproj", "{1A1AD399-C535-419F-AF3B-32289F0D57CB}"
+	ProjectSection(ProjectDependencies) = postProject
+		{04D71E55-8F9B-4F14-B67D-85E2301E6BB9} = {04D71E55-8F9B-4F14-B67D-85E2301E6BB9}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{04D71E55-8F9B-4F14-B67D-85E2301E6BB9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04D71E55-8F9B-4F14-B67D-85E2301E6BB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04D71E55-8F9B-4F14-B67D-85E2301E6BB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04D71E55-8F9B-4F14-B67D-85E2301E6BB9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A1AD399-C535-419F-AF3B-32289F0D57CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A1AD399-C535-419F-AF3B-32289F0D57CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A1AD399-C535-419F-AF3B-32289F0D57CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A1AD399-C535-419F-AF3B-32289F0D57CB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2A97DDE7-315A-4D97-84DC-9730C7555B51}
+	EndGlobalSection
+EndGlobal

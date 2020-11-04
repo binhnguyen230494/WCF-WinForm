@@ -1,0 +1,7 @@
+C:\Users\STB\source\repos\xphu\bin\xphu.dll.config
+C:\Users\STB\source\repos\xphu\bin\xphu.dll
+C:\Users\STB\source\repos\xphu\bin\xphu.pdb
+C:\Users\STB\source\repos\xphu\obj\Release\xphu.csprojAssemblyReference.cache
+C:\Users\STB\source\repos\xphu\obj\Release\xphu.csproj.CoreCompileInputs.cache
+C:\Users\STB\source\repos\xphu\obj\Release\xphu.dll
+C:\Users\STB\source\repos\xphu\obj\Release\xphu.pdb

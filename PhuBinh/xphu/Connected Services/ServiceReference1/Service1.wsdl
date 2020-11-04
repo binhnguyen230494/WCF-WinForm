@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Service1" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:57820/Service1.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:57820/Service1.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:57820/Service1.svc?xsd=xsd2" />
+      <xsd:import schemaLocation="http://localhost:57820/Service1.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/xphu" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IService1_DsAcount_InputMessage">
+    <wsdl:part name="parameters" element="tns:DsAcount" />
+  </wsdl:message>
+  <wsdl:message name="IService1_DsAcount_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DsAcountResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_DangNhap_InputMessage">
+    <wsdl:part name="parameters" element="tns:DangNhap" />
+  </wsdl:message>
+  <wsdl:message name="IService1_DangNhap_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DangNhapResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_Account_InputMessage">
+    <wsdl:part name="parameters" element="tns:Account" />
+  </wsdl:message>
+  <wsdl:message name="IService1_Account_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AccountResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_Them_InputMessage">
+    <wsdl:part name="parameters" element="tns:Them" />
+  </wsdl:message>
+  <wsdl:message name="IService1_Them_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ThemResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_Sua_InputMessage">
+    <wsdl:part name="parameters" element="tns:Sua" />
+  </wsdl:message>
+  <wsdl:message name="IService1_Sua_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SuaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_Xoa_InputMessage">
+    <wsdl:part name="parameters" element="tns:Xoa" />
+  </wsdl:message>
+  <wsdl:message name="IService1_Xoa_OutputMessage">
+    <wsdl:part name="parameters" element="tns:XoaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_IThemOption_InputMessage">
+    <wsdl:part name="parameters" element="tns:IThemOption" />
+  </wsdl:message>
+  <wsdl:message name="IService1_IThemOption_OutputMessage">
+    <wsdl:part name="parameters" element="tns:IThemOptionResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_XoaOption_InputMessage">
+    <wsdl:part name="parameters" element="tns:XoaOption" />
+  </wsdl:message>
+  <wsdl:message name="IService1_XoaOption_OutputMessage">
+    <wsdl:part name="parameters" element="tns:XoaOptionResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_LoadContent_InputMessage">
+    <wsdl:part name="parameters" element="tns:LoadContent" />
+  </wsdl:message>
+  <wsdl:message name="IService1_LoadContent_OutputMessage">
+    <wsdl:part name="parameters" element="tns:LoadContentResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IService1">
+    <wsdl:operation name="DsAcount">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/DsAcount" message="tns:IService1_DsAcount_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/DsAcountResponse" message="tns:IService1_DsAcount_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DangNhap">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/DangNhap" message="tns:IService1_DangNhap_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/DangNhapResponse" message="tns:IService1_DangNhap_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Account">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/Account" message="tns:IService1_Account_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/AccountResponse" message="tns:IService1_Account_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Them">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/Them" message="tns:IService1_Them_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/ThemResponse" message="tns:IService1_Them_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Sua">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/Sua" message="tns:IService1_Sua_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/SuaResponse" message="tns:IService1_Sua_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Xoa">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/Xoa" message="tns:IService1_Xoa_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/XoaResponse" message="tns:IService1_Xoa_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="IThemOption">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/IThemOption" message="tns:IService1_IThemOption_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/IThemOptionResponse" message="tns:IService1_IThemOption_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="XoaOption">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/XoaOption" message="tns:IService1_XoaOption_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/XoaOptionResponse" message="tns:IService1_XoaOption_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="LoadContent">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/LoadContent" message="tns:IService1_LoadContent_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/LoadContentResponse" message="tns:IService1_LoadContent_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IService1" type="tns:IService1">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="DsAcount">
+      <soap:operation soapAction="http://tempuri.org/IService1/DsAcount" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DangNhap">
+      <soap:operation soapAction="http://tempuri.org/IService1/DangNhap" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Account">
+      <soap:operation soapAction="http://tempuri.org/IService1/Account" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Them">
+      <soap:operation soapAction="http://tempuri.org/IService1/Them" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Sua">
+      <soap:operation soapAction="http://tempuri.org/IService1/Sua" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Xoa">
+      <soap:operation soapAction="http://tempuri.org/IService1/Xoa" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IThemOption">
+      <soap:operation soapAction="http://tempuri.org/IService1/IThemOption" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="XoaOption">
+      <soap:operation soapAction="http://tempuri.org/IService1/XoaOption" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoadContent">
+      <soap:operation soapAction="http://tempuri.org/IService1/LoadContent" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Service1">
+    <wsdl:port name="BasicHttpBinding_IService1" binding="tns:BasicHttpBinding_IService1">
+      <soap:address location="http://localhost:57820/Service1.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
